@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  vue-docker:
+    container_name: vue_container
+    build: .
+    image: node
+    command: npm run serve
+    volumes:
+      - .:/app
+      - /app/node_modules
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+      - CHOKIDAR_USEPOLLING=true
