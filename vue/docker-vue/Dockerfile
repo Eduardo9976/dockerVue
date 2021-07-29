@@ -4,12 +4,14 @@ RUN mkdir -p /app
 
 WORKDIR /app
 
-RUN apk update && apk upgrade
+RUN npm update -g
 
-RUN apk add git
+RUN npm install -g @vue/cli
 
-COPY package.json .
+ENV PATH /app/node_modules/.bin:$PATH
 
-RUN npm install
+COPY package.json /app/package.json
+
+RUN npm install --silent
 
 EXPOSE 3000

@@ -8,7 +8,7 @@
         >vue-cli documentation</a
       >.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Installed CLI Plugins oi</h3>
     <ul>
       <li>
         <a
@@ -23,7 +23,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router"
           target="_blank"
           rel="noopener"
-          >router</a
+          >rou</a
         >
       </li>
       <li>

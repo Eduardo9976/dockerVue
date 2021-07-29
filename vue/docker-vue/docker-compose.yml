@@ -2,6 +2,7 @@ version: "3.8"
 services:
   vue-docker:
     container_name: vue_container
+    restart: always
     build: .
     image: node
     command: npm run serve
